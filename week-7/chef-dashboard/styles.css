@@ -1,0 +1,55 @@
+/*
+  Pragmatic JavaScript
+  Chapter 3
+  Programming Assignment
+
+  Author: Joe Akindele
+  Date: May 4 2025
+  Filename: styless.css
+*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  color: #e74c3c;
+  margin-bottom: 20px;
+
+
+}
+.chef-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10%;
+  max-width: 1200px;
+
+}
+
+.chef-data {
+  background: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  
+}
+
+.chef-data p {
+  line-height: 1.5;
+  margin: 8px 0;
+}
+
+.chef-data:hover{
+  transform: translateY(-5px);
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
