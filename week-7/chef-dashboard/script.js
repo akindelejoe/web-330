@@ -4,13 +4,11 @@
   Programming Assignment
 
   Author: Joe Akindele
-  Date:
+  Date: May 4 2025
   Filename: script.js
 */
 
 "use strict";
-
-// TODO: Define an array of chef objects
 let chefs = [
   {
     name : "Yan Cooke", 
@@ -31,14 +29,12 @@ let chefs = [
     specialty : "Italian Cuisine",
     weakness : "Jamaican Rice",
     location : "USA",
-
   }
 
 
 
 ];
 
-// TODO: Define a function to retrieve the first chef's information
 function retrieveChef1() {
   return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -50,7 +46,7 @@ function retrieveChef1() {
       }, 2000); 
   });
 }
-// TODO: Define a function to retrieve the second chef's information
+
 function retrieveChef2() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -64,7 +60,7 @@ function retrieveChef2() {
 }
 
 
-// TODO: Define a function to retrieve the third chef's information
+
 function retrieveChef3() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -78,7 +74,7 @@ function retrieveChef3() {
 }
 
 
-// TODO: Use Promise.allSettled to retrieve all chefs' information and update the webpage accordingly
+
 Promise.allSettled([retrieveChef1(), retrieveChef2(), retrieveChef3()])
     .then(results => {
         results.forEach((result, index) => {
