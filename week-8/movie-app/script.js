@@ -42,7 +42,7 @@ function fetchMovie(title) {
       } else {
         reject("Movie not found. Please try another title.");
       }
-    }, 1000); // simulate 1-second delay
+    }, 1000); 
   });
 }
 
